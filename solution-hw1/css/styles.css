@@ -1,0 +1,196 @@
+/* Reset basic elements */
+body, h1, h2, p, ul, li, nav, header, section, article {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 2;
+  padding: 20px;
+  color: #333;
+}
+
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  width: 400px;
+  height: auto;
+}
+
+
+/* Navigation styles */
+nav {
+  border-top: 1.5px solid #000; /* A black line at the top of the main content area */
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin:10px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+nav a:hover {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* Main styles */
+main{
+  text-align: center;
+  margin-top: 10px;
+}
+
+main h1 {
+  font-size: 1.5em;
+  padding: 40px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+
+/* Product styles */
+.product {
+  position: relative;
+  display: block; /* Adjust as necessary to fit your layout */
+  padding: 10px;
+}
+
+.product h2 {
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+
+/* Image styles */
+#product-details img {
+  width: 600px;
+  height: 600px;
+  border: 2.5px solid #000;
+  margin-bottom: 10px;
+}
+
+#product-gallery img {
+  width: 400px;
+  height: 400px;
+  border: 2.5px solid #000;
+  margin-bottom: 100px;
+}
+
+#shopping-cart img {
+  width: 200px;
+  height: 200px;
+  border: 2.5px solid #000;
+  margin-bottom: 10px;
+}
+
+
+/* Product gallery page styles */
+#product-gallery .product {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#product-gallery .product-info {
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+#product-gallery .product-link {
+  text-decoration: none;
+  display: block;
+}
+
+#product-gallery .product:hover {
+  background-color: yellow;
+}
+
+#product-gallery .product:hover h2{
+  font-weight: bold;
+}
+
+
+/* Product details page styles */
+#product-details .product-configuration {
+  margin-bottom: 20px;
+}
+
+#product-details label {
+  display: block;
+  margin-top: 10px;
+}
+
+#product-details select {
+  width: 190px;
+  height: 35px;
+  margin: 10px;
+  font-size: medium;
+}
+
+#product-details .price-button-container {
+  margin-top: 30px;
+}
+
+#product-details .price {
+  padding-right: 10px;
+}
+
+/* Product cart page styles */
+#shopping-cart .remove-link {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+}
+
+#shopping-cart .cart-container {
+  margin-bottom: 20px;
+}
+
+#shopping-cart .total-price-container {
+  border-top: 2px solid black; /* A black line at the top of total price area */
+  padding-top: 20px;
+  line-height: 3;
+}
+
+
+/* Button styles */
+button {
+  background: yellow;
+  color: black;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 138px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
