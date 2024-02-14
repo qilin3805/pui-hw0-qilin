@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/rollsData.js" defer></script>
+    <script src=js/product-detail.js defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="./index.html">
+          <img src="../assets/logo/logo-01.svg" alt="Bun-Bun bake shop">
+        </a>
+      </div>
+
+      <div class="nav-container">
+        <nav class="navigation">
+          <a href="./index.html" class="nav-link">Products</a>
+          <a href="./shopping-cart.html" class="nav-link">Cart <span class="cart-badge">2</span>
+          </a>
+        </nav>
+        <div class="nav-line"></div> 
+        <h1 class="nav-title" id="product-title">Orginal cinnamon roll</h1>
+      </div>
+    </header>
+
+    <main  id="product-details">
+      <div class="detail-container">
+        <div id="product-configuration">
+          <img id="product-image" src="../assets/products/original-cinnamon-roll.jpg" alt="original-cinnamon-roll">
+        </div>
+  
+        <div id="shopping-configuration">
+          <p id="description">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+          <div  class="label-container">
+            <label for="glazingOptions" class="label-container">Glazing:</label>
+            <select id="glazingOptions" onchange="glazingChange(this)">    
+              <!-- options populated dynamically -->
+            </select>
+          </div>
+  
+          <div  class="label-container">
+            <label for="packSizeOptions">Pack size:</label>
+            <select id="packSizeOptions" onchange="packSizeChange(this)">
+              <!-- options populated dynamically -->
+            </select>
+          </div>
+        
+          <div class="price-button-container">
+            <span class="price" id="product-price"></span>
+            <button type="button" id="add-to-cart-btn">Add to Card</button>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
