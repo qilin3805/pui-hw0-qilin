@@ -1,12 +1,12 @@
 // A list of price adaptations object based on user selections.
-let allGlazing = {
+const allGlazing = {
     'Keep original': 0.00,
     'Sugar milk': 0.00,
     'Vanilla milk': 0.50,
     'Double chocolate': 1.50
 };
 
-let allPackSize = {
+const allPackSize = {
     1: 1,
     3: 3,
     6: 5,
