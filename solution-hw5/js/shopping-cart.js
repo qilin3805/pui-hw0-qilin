@@ -20,7 +20,8 @@ function addNewCard(rollType, rollGlazing, packSize, rollPrice) {
 
     const rollInfo = rolls[rollType];
     rollcard.rollImageURL = "../assets/products/" + rollInfo.imageFile;
-    rollcard.calculatedPrice = calculatePrice(rollcard);
+    rollcard.calculatedPrice = parseFloat(calculatePrice(rollcard)).toFixed(2);
+    console.log(typeof rollcard.calculatedPrice);
     rollcard.element = null;
     
     rollcardSet.add(rollcard);
@@ -103,11 +104,11 @@ function calculatePrice(rollcard) {
 // update totoal price of the cart daynamically
 function sumPrice() {
     let totalPrice = 0;
-    for (const rollcard of rollcardSet) {
+    for (const rollcard of rollcardSet) { 
         totalPrice += parseFloat(rollcard.calculatedPrice);
     }
-    console.log(totalPrice);
-    cartPrice.innerText = `$${totalPrice}`;
+    
+    cartPrice.innerText = `$${totalPrice.toFixed(2)}`;
 
 }
 
