@@ -140,7 +140,9 @@ function addToCart() {
  */ 
 function retrieveFromLocalStorage() {
     const storageArrayString = localStorage.getItem("storedItems");
-    cart = JSON.parse(storageArrayString);
+    if (storageArrayString) {
+        cart = JSON.parse(storageArrayString);
+    }
 }
 
 /**

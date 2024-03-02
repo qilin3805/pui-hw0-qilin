@@ -135,7 +135,9 @@ function retrieveFromLocalStorage() {
     let cart = [];
     console.log("Local Storage:", localStorage.getItem("storedItems"));
     const storageArrayString = localStorage.getItem("storedItems");
-    cart = JSON.parse(storageArrayString);
+    if (storageArrayString) {
+        cart = JSON.parse(storageArrayString);
+    }
     
     // update rollcard template according to local storage
     for (const rollData of cart) {

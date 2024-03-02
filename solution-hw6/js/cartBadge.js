@@ -15,11 +15,13 @@ function updateCartBadge() {
  */
 function countLocalStorage() {
     const storageArrayString = localStorage.getItem("storedItems");
-    const tmpCart = JSON.parse(storageArrayString);
+    if (storageArrayString) {
+        const tmpCart = JSON.parse(storageArrayString);
     
-    cartItemCount = 0
-    for (const rollData of tmpCart) {
-        cartItemCount++;
+        cartItemCount = 0
+        for (const rollData of tmpCart) {
+            cartItemCount++;
+        }
     }
 }
 
