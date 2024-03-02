@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/rollsData.js" defer></script>
+    <script src="js/cartBadge.js" defer></script>
+    <script src="js/shopping-cart.js" defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="./index.html">
+          <img src="../assets/logo/logo-01.svg" alt="Bun-Bun bake shop">
+        </a>
+      </div>
+
+      <div class="nav-container">
+        <nav class="navigation">
+          <a href="./index.html" class="nav-link">Products</a>
+          <a href="./shopping-cart.html" class="nav-link">Cart <span class="cart-badge">2</span>
+          </a>
+        </nav>
+        <div class="nav-line"></div> 
+        <h1 class="nav-title">Shopping Cart</h1>
+      </div>
+    </header>
+
+    <main id="shopping-cart">
+      <div class="cart-container">
+
+        <div id="rollcard-list">
+          <template id = "rollcart-template">
+            <div class = "rollcard">
+
+              <div class= "product">
+                <img class="card-url" src= "../assets/products/original-cinnamon-roll.jpg" alt="original-cinnamon-roll">
+                <div class="cart-text">
+                  <p class="card-title">Orginal Cinnamon Roll</p>
+                  <p class="card-glaze">Glazing: Keep orginal</p>
+                  <p class="card-size">Pack Size: 1</p>
+                </div>
+                <p class="card-price">$2.49</p>
+              </div>
+              <p class="remove-link">Remove</p>
+              
+            </div> <!-- END cartcard -->
+          </template>
+        </div>
+
+        <div class="nav-line"></div> 
+
+        <div class="total-price-container">
+          <p>Total</p>
+          <p id="cart-price">$0</p>
+        </div>
+        <button type="button">Checkout</button>
+        
+      </div>
+  
+    </main>
+  </body>
+</html>

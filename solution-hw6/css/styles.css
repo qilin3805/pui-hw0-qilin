@@ -1,0 +1,258 @@
+/* Reset basic elements */
+body, h1, h2, p, ul, li, nav, header, section, article {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px 20px;
+}
+
+/* Logo styles */
+.logo-container img {
+  width: 400px;
+  height: auto;
+  padding-right: 20px;
+}
+
+/* Navigation styles */
+.nav-container {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: 40px;
+}
+
+.nav-container .nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.35em;
+  margin-left: 30px; 
+  position: relative;
+}
+
+.nav-container a:hover {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.nav-container .cart-badge {
+  background-color: red;
+  color: white;
+  padding: 4.5px 6px;
+  border-radius: 50%;
+  font-size: 0.8em;
+  position: absolute;
+  top: -20px;
+  right: -32px;
+}
+
+.nav-container .nav-line {
+  height: 4px;
+  background-color: #000;
+  margin-top: -30px;
+}
+
+.nav-container h1 {
+  font-size: 1.4em;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+/* Main styles */
+main{
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Image styles */
+#product-gallery img {
+  width: 285px;
+  height: 285px;
+  border: 2.5px solid #000;
+  margin-bottom: 120px;
+}
+
+#product-details img {
+  width: 600px;
+  height: 600px;
+  border: 2.5px solid #000;
+}
+
+#shopping-cart img {
+  width: 200px;
+  height: 200px;
+  border: 2.5px solid #000;
+}
+
+/* Product gallery page styles */
+#product-gallery .product {
+  position: relative;
+  padding: 6px;
+}
+
+#product-gallery .product h2 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+#product-gallery .product {
+  flex-basis: 30%;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#product-gallery .product-info {
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  top: 340px;
+  left: 6px;
+  width: 100%;
+  text-align: left;
+}
+
+#product-gallery .product:hover {
+  background-color: yellow;
+}
+
+#product-gallery .product:hover h2{
+  font-weight: bold;
+}
+
+/* Product details page styles */
+#product-details .detail-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+#product-details #shopping-configuration {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 300px;
+}
+
+#product-details #description {
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 100px;
+  font-size: 1.1em;
+}
+
+#product-details .label-container {
+  text-align: left;
+  line-height: 2;
+}
+
+#product-details select {
+  width: 300px;
+  height: 40px;
+  font-size: 1em;
+}
+
+#product-details .price {
+  padding-right: 20px;
+}
+
+#product-details .price-button-container {
+  align-self: center;
+  margin-top: 100px;
+}
+
+/* Product cart page styles */
+#shopping-cart .remove-link {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#shopping-cart .cart-container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-left: 350px;
+  gap:25px
+}
+
+#shopping-cart .product {
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#shopping-cart .rollcard {
+  margin-bottom: 30px;
+}
+
+#shopping-cart .cart-text {
+  text-align: left;
+  flex-grow: 1;
+  line-height: 2;
+}
+
+#shopping-cart .nav-line {
+  height: 4px;
+  background-color: #000;
+}
+
+#shopping-cart .total-price-container {
+  display: flex;
+  flex-direction: row;
+  gap: 370px;
+  align-self: flex-end;
+}
+
+/* Button styles */
+button {
+  background: yellow;
+  color: black;
+  border: 1px solid #000;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  align-self: flex-end;
+}
